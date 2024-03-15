@@ -83,52 +83,6 @@ db.user2.insertOne({
     altura: 170,
     peso: 160
 });
-
-db.user2.insertOne({
-    nombre: "Ana",
-    apellido: "Martinez",
-    correo: "ana.martinez@example.com",
-    ciudad: "Medellín XD",
-    país: "India",
-    edad: 28,
-    altura: 165,
-    peso: 140
-});
-
-db.user2.insertOne({
-    nombre: "Carlos",
-    apellido: "Gomez",
-    correo: "carlos.gomez@example.com",
-    ciudad: "Bogotá",
-    país: "Colombia",
-    salario: 50000,
-    edad: 30,
-    altura: 175,
-    peso: 150
-});
-
-db.user2.insertOne({
-    nombre: "Maria",
-    apellido: "Lopez",
-    ciudad: "Medellín",
-    país: "Italia",
-    salario: 60000,
-    edad: 28,
-    altura: 195,
-    peso: 130
-});
-
-db.user2.insertOne({
-    nombre: "Juan",
-    apellido: "Martinez",
-    correo: "juan.martinez@example.com",
-    ciudad: "Cali",
-    país: "Alemania",
-    salario: 55000,
-    edad: 32,
-    altura: 180,
-    peso: 160
-});
 */
 
 
@@ -197,3 +151,4 @@ db.user2.find({ país: { $ne: "Colombia" }, altura: { $lt: 170 } });
 // Obtener todos los usuarios que sean de India y que no tengan un salario registrado.
 db.user2.find({ país: { $eq: "India" }, salario: { $exists: false } });
 */
+
